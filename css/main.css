@@ -504,6 +504,12 @@ body {
 }
 
 @media screen and (max-width: 479px) {
+  .title {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 479px) {
   .nav-list,
   .menu-links {
     display: none;
@@ -604,17 +610,15 @@ body {
 }
 
 .features {
-  padding: 94px 0px 0px;
+  padding: 60px 0px;
 }
 
-.features-list-item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  background-color: #ffffff;
+.features-list-item, .features-icon {
+  width: 100%;
 }
 
-.features-list-item:nth-child(4n) {
-  margin-right: 0px;
+.features-list-item .features-list-item, .features-icon .features-list-item {
+  margin-bottom: 30px;
 }
 
 .features-description {
@@ -623,22 +627,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .features-icon-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 120px;
-  width: 270px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 25px 190px;
   background-color: #f5f4fa;
-  margin-bottom: 20px;
 }
 
 .activity-list-item {
