@@ -429,15 +429,39 @@ body {
 }
 
 .container {
-  width: 1230px;
+  width: 100%;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.section {
-  padding: 94px 0;
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.section, .footer {
+  padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section, .footer {
+    padding: 94px 0;
+  }
 }
 
 .header-line::after {
@@ -452,7 +476,7 @@ body {
 }
 
 .section-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   margin-top: 0;
   color: #212121;
   font-weight: 700;
@@ -462,12 +486,10 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+  }
 }
 
 .title {
@@ -481,55 +503,15 @@ body {
   color: #212121;
 }
 
-.nav-container, .nav-list,
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.nav-list .nav-list-item + .nav-list-item {
-  margin-left: 50px;
-}
-
-.nav-list-item:first-child {
-  margin-left: 70px;
-}
-
-.nav-list-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.nav-list-item {
-  position: relative;
-}
-
-.current-link {
-  color: #2196f3;
-}
-
-.current-link::after {
-  content: "";
-  position: relative;
-  -webkit-transform: translateY(25px);
-          transform: translateY(25px);
-  display: block;
-  width: 100%;
-  height: 4px;
-  bottom: 0px;
-  left: 0px;
-  background-color: #2196f3;
-  border-radius: 2px;
+@media screen and (max-width: 479px) {
+  .nav-list,
+  .menu-links {
+    display: none;
+  }
 }
 
 .logo {
+  display: block;
   padding: 25px 0;
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -546,10 +528,13 @@ body {
   color: #212121;
 }
 
+@media screen and (max-width: 479px) {
+  .logo {
+    padding: 16px 0;
+  }
+}
+
 .contacts {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.16;
@@ -562,29 +547,13 @@ body {
 .icon-male {
   height: 12px;
   width: 16px;
-  margin-right: 10px;
   fill: currentColor;
 }
 
 .icon-tel {
   width: 10px;
   height: 16px;
-  margin-right: 10px;
   fill: currentColor;
-}
-
-.menu-links .contacts + .contacts {
-  margin-left: 30px;
-}
-
-.menu-links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .button {

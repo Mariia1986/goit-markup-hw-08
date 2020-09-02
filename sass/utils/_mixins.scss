@@ -3,3 +3,15 @@
   font-size: $fz;
   line-height: $lh;
 }
+
+@mixin for-phone {
+  @media screen and (max-width: 479px) { @content; }
+}
+@mixin  for-tablet {
+  @media screen and (min-width: 768px) { @content; }
+}
+@mixin for-desktop {
+  @media screen and (min-width: 1200px) { @content; }}
+  
+  @mixin for-phone-cont {
+    @media screen and (min-width: 480px) { @content; }}
