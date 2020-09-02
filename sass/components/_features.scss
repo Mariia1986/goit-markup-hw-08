@@ -1,0 +1,32 @@
+.features {
+    padding: 94px 0px 0px;
+  }
+  
+  
+  .features-list-item {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    background-color: $primary-white-color;
+  
+  
+  &:nth-child(4n) {
+    margin-right: 0px;
+  }}
+  
+    
+  
+  .features-description {
+    margin: 0 0;
+    @include font( 14px, 1.71, 400);
+    letter-spacing: 0.03em;
+  }
+  
+  .features-icon-block {
+    display: flex;
+    height: 120px;
+    width: 270px;
+    justify-content: center;
+    align-items: center;
+    background-color: $background-button-color;
+    margin-bottom: 20px;
+  }

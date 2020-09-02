@@ -1,0 +1,75 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+header {
+ position:relative;
+}
+body{
+  font-family: $mainFont;
+  @include font( 14px, 1.71, $fw:400);
+  font-style: normal;
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  text-decoration: none;
+}
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: $primary-text-color;
+
+   &:hover,
+   &:focus {
+  color: $accent-color;
+  fill: $accent-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+}
+.container {
+  width: 1230px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding: 94px 0;
+}
+.header-line::after {
+  content: "";
+  position:absolute;
+  width: 100%;
+  transform: translateY(2px);
+  bottom: 0px;
+  left: 0px;
+  border: 1px solid #ececec;
+}
+.section-title {
+  margin-bottom: 50px;
+  margin-top: 0;
+  color: $title-text-color;
+  @include font(28px, 1.18, 700);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.section-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  @include font( 14px, 1.14, 700);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $title-text-color;
+}

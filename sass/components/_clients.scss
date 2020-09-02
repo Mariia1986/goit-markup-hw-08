@@ -1,0 +1,26 @@
+.section-list-clients {
+  width: calc((100% - 30px * 5) / 6);
+  margin-right: 30px;
+
+ &:nth-child(6n) {
+  margin-right: 0px;
+}}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid $primary-text-color;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+  border-color: $accent-color;
+}}
+
+.clients {
+  fill: currentColor;
+}

@@ -1,0 +1,11 @@
+.logo-footer {
+    display: block;
+    margin-bottom: 20px;
+    padding: 0px;
+    font-family: $secondFont;
+    @include font( 24px, 1.17, 700);
+    letter-spacing: 0.03em;
+  }
+  .logo-end-footer {
+    color: $primary-white-color;
+  }

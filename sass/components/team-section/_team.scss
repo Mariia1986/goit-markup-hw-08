@@ -1,0 +1,37 @@
+.section-team {
+    background-color: $background-button-color;
+  }
+  .team-list-item {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    background-color: $primary-white-color;}
+  
+  .person-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    @include font( 16px, 1.19, 500);
+    letter-spacing: 0.03em;
+    color: $title-text-color;
+  }
+  .profesion {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 16px;
+    @include font( 16px, 1.19, 400);
+    letter-spacing: 0.03em;
+  }
+  
+  .team-item {
+    width: 270px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .team-item > img {
+    display: block;
+    object-fit: contain;
+  }
+  .social-networks-list {
+    justify-content: center;
+  }

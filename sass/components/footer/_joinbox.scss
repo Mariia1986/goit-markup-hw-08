@@ -1,0 +1,47 @@
+.join-box {
+    margin-right: 94px;
+  }
+  .join {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    @include font( 14px, 1.14, 700);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+  .join-button {
+    position: relative;
+    min-width: 200px;
+    height: 50px;
+    background-color: $accent-color;
+    color: $primary-white-color;
+    @include font(16px, 1.87, 700);
+    padding: 010px 62px 10px 29px;
+    letter-spacing: 0.06em;
+    margin-left: 13px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .join-input-form {
+    width: 358px;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    color: $primary-text-color;
+    @include font( 16px, 1.25, 400);
+    padding: 15px 0px 15px 16px;
+    outline: none;
+  }
+  .join-icon {
+    position: absolute;
+    margin-left: 10px;
+    fill: $primary-white-color;
+    right: 28px;
+    top: 13px;
+  }

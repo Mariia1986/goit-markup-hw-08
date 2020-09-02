@@ -1,0 +1,21 @@
+.hero {
+    background-image: linear-gradient(
+        $ovelay-bgrimage-color 100%,
+        $ovelay-bgrimage-color 100%
+      ),
+      url(../images/bgimg.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+    
+  }
+  .page-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    @include font(44px, 1.36, 900);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color:$primary-white-color;
+  }

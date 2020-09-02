@@ -1,0 +1,12 @@
+.logo {
+    padding: 25px 0;
+    font-family: $secondFont;
+   @include font(24px, 1.17, 700);
+    letter-spacing: 0.03em;
+  
+  &-start {
+    color: $accent-color;}
+  
+  &-end {
+    color: $title-text-color;}
+}

@@ -1,0 +1,15 @@
+.hero-btn {
+    display:inline-block;
+    min-width: 200px;
+    padding: 10px 32px;
+   @include font(16px, 1.85, 700);
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $primary-white-color;
+    border-radius: 4px;
+    border-color: transparent;
+    background-color: $accent-color;
+    border: 0px;
+    cursor: pointer;
+    outline: none;
+  }
