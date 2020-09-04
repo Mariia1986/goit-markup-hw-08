@@ -6,8 +6,12 @@
       url(../images/bgimg.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-    padding: 200px 0;
+      padding: 118px 0;
+    // padding: 200px 0;
     text-align: center;
+    @include for-desktop{
+       padding: 200px 0;
+    }
     
   }
   .page-title {
