@@ -2,20 +2,23 @@
     background-color: $footer-background-color;
   }
 
-  .footer-box {
-    align-items: baseline;
-    padding: 60px 0;
-  }
+  // .footer-box {
+  //   // align-items: baseline;
+  //   // padding: 60px 0;
+  // }
   
   .footer-contacts {
     @include font( 14px, 1.71, 400);
     font-style: normal;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 60px;
+    text-align: center;
   }
   .adress {
     color: $primary-white-color;
   }
   .adress-box {
-    margin-right: 69px;
+    margin-bottom: 60px;
+  //   margin-right: 69px;
   }
