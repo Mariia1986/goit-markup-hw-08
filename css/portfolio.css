@@ -592,9 +592,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .button-list .button-list-item:not(:last-child) {
@@ -607,7 +607,7 @@ body {
 
 .portfolio-list-item {
   display: block;
-  width: calc((100% - 30px * 2) / 3);
+  width: 100%;
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
