@@ -24,11 +24,15 @@
   .button-list {
     display: flex;
     justify-content:flex-start;
+    flex-wrap: wrap;
+    
  
    .button-list-item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
     } }
     
   .button-section {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
   }

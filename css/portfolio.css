@@ -595,20 +595,22 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .button-list .button-list-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .button-section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .portfolio-list-item {
   display: block;
   width: 100%;
-  margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid #eeeeee;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,8 +622,8 @@ body {
 }
 
 .portfolio-list-item:hover .project-description {
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
 }
 
 .portfolio-list-item:hover, .portfolio-list-item:focus {
@@ -690,8 +692,8 @@ body {
   height: 100%;
   color: #ffffff;
   padding: 63px 24px;
-  -webkit-transform: translateY(315px);
-          transform: translateY(315px);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
