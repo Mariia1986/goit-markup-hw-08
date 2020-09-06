@@ -492,6 +492,16 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -517,7 +527,15 @@ body {
 }
 
 @media screen and (min-width: 480px) {
-  .nav-container, .nav-list,
+  .nav-list,
+  .menu-links {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-container,
+  .nav-list,
   .navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -529,32 +547,8 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-container, .nav-list,
-  .navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media screen and (min-width: 480px) {
   .nav-list .nav-list-item + .nav-list-item {
     margin-left: 50px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .nav-list .nav-list-item + .nav-list-item {
-    margin-left: 50px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .nav-list-item:first-child {
-    margin-left: 88px;
   }
 }
 
@@ -625,25 +619,48 @@ body {
 }
 
 .contacts {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts:first-child {
+    margin-bottom: 10px;
+  }
 }
 
 .icon-male {
   height: 12px;
   width: 16px;
+  margin-right: 10px;
   fill: currentColor;
 }
 
 .icon-tel {
   width: 10px;
   height: 16px;
+  margin-right: 10px;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: auto;
+  }
 }
 
 .button {

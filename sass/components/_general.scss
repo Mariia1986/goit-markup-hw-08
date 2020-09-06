@@ -5,6 +5,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  
 }
 header {
  position:relative;
@@ -80,10 +81,11 @@ body{
       margin-bottom: 50px;}
   
 }
-// .section-list {
-//   // display: flex;
-//   flex-wrap: wrap;
-// }
+.section-list {
+  @include for-tablet{
+  display: flex;
+  flex-wrap: wrap;}
+}
 .title {
   margin-top: 0;
   margin-bottom: 10px;

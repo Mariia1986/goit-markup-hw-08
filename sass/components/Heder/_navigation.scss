@@ -3,28 +3,29 @@
 @include for-phone{
       display: none;
   }
+  @include for-phone-cont{
+    display: none;
+  }
 }
 
-.nav-container,.nav-list,
+.nav-container,
+.nav-list,
 .navigation{
-  @include for-phone-cont{
-    display:flex;
-    align-items: center;
-  }
+ 
+  
   @include for-tablet{
      display:flex;
     align-items: center;
 }}
+
 .nav-list .nav-list-item + .nav-list-item {
-  @include for-phone-cont{
-    margin-left: 50px;}
+  
     @include for-tablet{
       margin-left: 50px;
     }
   }
   .nav-list-item:first-child {
-    @include for-phone-cont{
-    margin-left: 88px;}
+    
     @include for-tablet{
       margin-left: 88px;}
       @include for-desktop{

@@ -1,26 +1,31 @@
 
 .contacts {
-    //  display:inline-flex;
+     display:inline-flex;
     @include font(14px, 1.16, 500);
     letter-spacing: 0.02em;
-    align-items: center;
-    @mixin for-phone-cont{
-       display:inline-flex;}
-       @mixin for-tablet{
-        display:inline-flex;
+    // &:last-child{
+    //   margin-bottom: 10px;
+    
+    // align-items: center;
+    
+
+       @include for-tablet{
+        
+         &:first-child{
+          margin-bottom: 10px;
        }
-    }
+    }}
   
   .icon-male {
     height: 12px;
     width: 16px;
-    // margin-right: 10px;
+    margin-right: 10px;
     fill: currentColor;
    }
   .icon-tel {
     width: 10px;
     height: 16px;
-    // margin-right: 10px;
+    margin-right: 10px;
     fill: currentColor;
   }
   
@@ -28,16 +33,13 @@
   //   margin-left: 30px;
   // }
   .menu-links {
-    @mixin for-phone-cont{
-    display:flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    align-items: center;}
-    @mixin for-tablet{
+   
+    // align-items: center;}
+    @include for-tablet{
       display:flex;
-    flex-wrap: wrap;
-    margin-left: auto;
-    align-items: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-left: auto;}
     }
 
-  }
+  
