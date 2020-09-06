@@ -5,13 +5,14 @@
   }
   .features-list-item{
     background-color: $primary-white-color;
+    @include for-phone{
     &:not(:last-child){
       margin-bottom: 30px;
-    }
+    }}
     @include for-tablet{
       width: calc((100% - 30px * 2) / 2);
         margin-right: 30px;
-        margin-bottom: 30px;}
+        }
         &:nth-child(2n){
           margin-right: 0px;
         }
@@ -21,18 +22,25 @@
       &:last-child{
         margin-bottom: 0px;
       }
+      @include for-desktop{
+   width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+    &:nth-child(2n){
+      margin-right: 30px;
+    }
+     &:nth-child(4n) {
+    margin-right: 0px;
+  }
+  
+ 
+}
+      
     }
   
 
 
-  //   width: calc((100% - 30px * 3) / 4);
-  //   margin-right: 30px;
-  
-  
-  
-  // &:nth-child(4n) {
-  //   margin-right: 0px;
-  // }}
+ 
      
   
   .features-description {
@@ -40,10 +48,10 @@
     @include font( 14px, 1.71, 400);
     letter-spacing: 0.03em;
     text-align: center;
-    
-   @include for-tablet{
-     text-align: start;
-   }
+    @include for-phone-cont{
+      text-align: start;
+    }
+   
   }
   
    .features-icon-block {

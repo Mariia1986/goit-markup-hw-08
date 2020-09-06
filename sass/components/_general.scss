@@ -57,10 +57,13 @@ body{
 
   @include for-desktop{
     padding: 94px 0;}
-    
-
-
 }
+.footer{
+  @include for-desktop{
+    padding: 0px;
+  }
+}  
+
 .header-line::after {
   content: "";
   position:absolute;

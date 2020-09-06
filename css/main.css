@@ -464,6 +464,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding: 0px;
+  }
+}
+
 .header-line::after {
   content: "";
   position: absolute;
@@ -634,6 +640,21 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 0px;
+  }
+  .contacts:first-child {
+    margin-bottom: 0px;
+  }
+  .contacts:last-child {
+    margin-left: 30px;
+  }
+}
+
 .icon-male {
   height: 12px;
   width: 16px;
@@ -660,6 +681,18 @@ body {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-links {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -724,15 +757,16 @@ body {
   background-color: #ffffff;
 }
 
-.features-list-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 479px) {
+  .features-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .features-list-item {
     width: calc((100% - 30px * 2) / 2);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
 }
 
@@ -748,6 +782,20 @@ body {
   margin-bottom: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  .features-list-item {
+    width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+  .features-list-item:nth-child(2n) {
+    margin-right: 30px;
+  }
+  .features-list-item:nth-child(4n) {
+    margin-right: 0px;
+  }
+}
+
 .features-description {
   margin: 0 0;
   font-weight: 400;
@@ -757,7 +805,7 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .features-description {
     text-align: start;
   }
@@ -786,6 +834,12 @@ body {
 @media screen and (min-width: 1200px) {
   .activity {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    padding-top: 0px;
   }
 }
 
@@ -1184,6 +1238,20 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-list-clients {
+    margin-bottom: 0px;
+    width: calc((100% - 30px * 5) / 6);
+    margin-right: 30px;
+  }
+  .section-list-clients:nth-child(3n) {
+    margin-right: 30px;
+  }
+  .section-list-clients:nth-child(6n) {
+    margin-right: 0px;
+  }
+}
+
 .clients-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1214,6 +1282,18 @@ body {
   background-color: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding: 60px 0;
+  }
+}
+
 .footer-contacts {
   font-weight: 400;
   font-size: 14px;
@@ -1225,12 +1305,25 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-contacts {
+    margin-bottom: 0px;
+  }
+}
+
 .adress {
   color: #ffffff;
 }
 
 .adress-box {
   margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .adress-box {
+    margin-right: 69px;
+    margin-bottom: 0px;
+  }
 }
 
 .logo-footer {
@@ -1295,6 +1388,12 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .join-box {
+    margin-right: 94px;
+  }
+}
+
 .join {
   margin-top: 0px;
   text-align: center;
@@ -1330,6 +1429,12 @@ body {
   outline: none;
 }
 
+@media screen and (min-width: 1200px) {
+  .join-button {
+    margin-left: 13px;
+  }
+}
+
 .join-input-form {
   width: 100%;
   height: auto;
@@ -1358,6 +1463,13 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .join-input-form {
+    width: 358px;
+    margin-bottom: 0px;
+  }
+}
+
 .join-icon {
   position: absolute;
   fill: #ffffff;
@@ -1372,6 +1484,21 @@ body {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=main.css.map */

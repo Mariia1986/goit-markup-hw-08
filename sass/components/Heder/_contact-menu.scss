@@ -3,16 +3,22 @@
      display:inline-flex;
     @include font(14px, 1.16, 500);
     letter-spacing: 0.02em;
-    // &:last-child{
-    //   margin-bottom: 10px;
     
-    // align-items: center;
-    
-
-       @include for-tablet{
+           @include for-tablet{
         
          &:first-child{
           margin-bottom: 10px;
+       }
+       @include for-desktop{
+        align-items: center;
+        margin-bottom: 0px;
+        &:first-child{
+          margin-bottom: 0px;
+                 }
+                 &:last-child{
+                   margin-left: 30px;
+                 }
+           
        }
     }}
   
@@ -29,17 +35,21 @@
     fill: currentColor;
   }
   
-  // .menu-links .contacts + .contacts {
-  //   margin-left: 30px;
-  // }
+  
   .menu-links {
-   
-    // align-items: center;}
+      
     @include for-tablet{
       display:flex;
       flex-direction: column;
       flex-wrap: wrap;
       margin-left: auto;}
-    }
+
+      @include for-desktop{
+
+        align-items: center;
+         flex-direction: row;
+         
+        
+    }}
 
   

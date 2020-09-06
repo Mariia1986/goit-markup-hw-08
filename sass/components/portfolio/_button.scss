@@ -29,7 +29,9 @@
     margin-right: 8px;
     margin-bottom: 15px;
     } 
-  
+  @include for-desktop{
+    justify-content: center;
+  }
   }
     
   .button-section {

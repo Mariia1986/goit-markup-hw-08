@@ -2,10 +2,13 @@
     background-color: $footer-background-color;
   }
 
-  // .footer-box {
-  //   // align-items: baseline;
-  //   // padding: 60px 0;
-  // }
+  .footer-box {
+    @include for-desktop{
+      display: flex;
+    align-items: baseline;
+    padding: 60px 0;}
+
+  }
   
   .footer-contacts {
     @include font( 14px, 1.71, 400);
@@ -14,11 +17,16 @@
     color: rgba(255, 255, 255, 0.6);
     margin-bottom: 60px;
     text-align: center;
+    @include for-desktop{
+      margin-bottom: 0px;
+    }
   }
   .adress {
     color: $primary-white-color;
   }
   .adress-box {
     margin-bottom: 60px;
-  //   margin-right: 69px;
-  }
+    @include for-desktop{
+    margin-right: 69px;
+    margin-bottom: 0px;
+  }}
