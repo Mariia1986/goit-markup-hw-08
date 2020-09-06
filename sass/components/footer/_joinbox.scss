@@ -1,6 +1,9 @@
  .join-box {
    
-   margin-bottom: 60px;}
+   margin-bottom: 60px;
+  @include for-tablet{
+    margin-bottom: 0px;
+  }}
 //     margin-right: 94px;
 //   }
   .join {
@@ -46,6 +49,12 @@
     @include font( 16px, 1.25, 400);
     padding: 15px 0px 15px 16px;
     outline: none;
+    @include for-tablet{
+      display: block;
+      width: 450px;
+      margin-left: auto;
+        margin-right: auto;
+    }
   }
   .join-icon {
     position: absolute;
@@ -54,3 +63,14 @@
     right: 28px;
     top: 13px;
   }
+  .footer-tablet{
+    @include for-tablet{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  // .join-form{
+  //   @include for-tablet{
+  //   margin-left: auto;
+  //   margin-right: auto;}
+  // }

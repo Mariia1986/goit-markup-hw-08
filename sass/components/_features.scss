@@ -40,7 +40,10 @@
     @include font( 14px, 1.71, 400);
     letter-spacing: 0.03em;
     text-align: center;
-   
+    
+   @include for-tablet{
+     text-align: start;
+   }
   }
   
    .features-icon-block {

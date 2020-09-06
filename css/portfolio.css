@@ -922,6 +922,12 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .join-box {
+    margin-bottom: 0px;
+  }
+}
+
 .join {
   margin-top: 0px;
   text-align: center;
@@ -976,10 +982,29 @@ body {
   outline: none;
 }
 
+@media screen and (min-width: 768px) {
+  .join-input-form {
+    display: block;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .join-icon {
   position: absolute;
   fill: #ffffff;
   right: 28px;
   top: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=portfolio.css.map */
