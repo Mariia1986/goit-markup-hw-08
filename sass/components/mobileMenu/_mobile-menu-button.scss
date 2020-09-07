@@ -15,10 +15,10 @@
       display: none;
   }
 
-.menu-button .is-open .icon-menu{
+.menu-button.is-open .icon-menu{
 display: none;
 }
-.menu-button .is-open .icon-close{
+.menu-button.is-open .icon-close{
 display: block;
 }
 
