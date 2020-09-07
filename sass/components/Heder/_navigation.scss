@@ -7,7 +7,16 @@
     display: none;
   }
 }
+.navigation{
+  @include for-phone{
+  display: flex;
+  justify-content: space-between;}
 
+  @include for-phone-cont{
+    display: flex;
+  justify-content: space-between;
+  }
+}
 .nav-container,
 .nav-list,
 .navigation{
