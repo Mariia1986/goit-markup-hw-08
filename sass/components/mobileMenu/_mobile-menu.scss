@@ -1,0 +1,29 @@
+.header{
+    position: relative;
+}
+
+.menu-container{
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    background-color: $primary-white-color;
+   
+     
+   
+}
+.menu-container.is-open{
+    display: block;
+  
+}
+.menu-navigation, .contacts-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-container + .contacts-menu{
+    margin-bottom: 60px;
+}
