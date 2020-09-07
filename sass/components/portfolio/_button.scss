@@ -23,12 +23,18 @@
 
   .button-list {
     display: flex;
-    justify-content: center;
- 
-   .button-list-item:not(:last-child) {
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    .button-list-item:not(:last-child) {
     margin-right: 8px;
-    } }
+    margin-bottom: 15px;
+    } 
+  @include for-desktop{
+    justify-content: center;
+  }
+  }
     
   .button-section {
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
+    margin-bottom: 40px;
   }

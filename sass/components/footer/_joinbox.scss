@@ -1,8 +1,17 @@
-.join-box {
+ .join-box {
+   
+   margin-bottom: 60px;
+  @include for-tablet{
+    margin-bottom: 0px;
+  }
+  @include for-desktop{
     margin-right: 94px;
   }
+}
+
   .join {
     margin-top: 0px;
+    text-align: center;
     margin-bottom: 20px;
     @include font( 14px, 1.14, 700);
     letter-spacing: 0.03em;
@@ -10,7 +19,11 @@
     color: $primary-white-color;
   }
   .join-button {
+    display: block;
     position: relative;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
     min-width: 200px;
     height: 50px;
     background-color: $accent-color;
@@ -18,16 +31,21 @@
     @include font(16px, 1.87, 700);
     padding: 010px 62px 10px 29px;
     letter-spacing: 0.06em;
-    margin-left: 13px;
+    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
     cursor: pointer;
     outline: none;
+    @include for-desktop{
+     margin-left: 13px;
+    }
   }
   .join-input-form {
-    width: 358px;
+    
+    width: 100%;
     height: auto;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -37,11 +55,39 @@
     @include font( 16px, 1.25, 400);
     padding: 15px 0px 15px 16px;
     outline: none;
+    @include for-tablet{
+      display: block;
+      width: 450px;
+      margin-left: auto;
+        margin-right: auto;
+    }
+    @include for-desktop{
+     width: 358px;
+     margin-bottom: 0px;
+    }
   }
   .join-icon {
     position: absolute;
-    margin-left: 10px;
+    // margin-left: 10px;
     fill: $primary-white-color;
     right: 28px;
     top: 13px;
   }
+  .footer-tablet{
+    @include for-tablet{
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  .join-form{
+    @include for-tablet{
+    margin-left: auto;
+    margin-right: auto;}
+    
+  }
+  .form{
+    @include for-desktop{
+     display: flex;
+      }
+    }
+  

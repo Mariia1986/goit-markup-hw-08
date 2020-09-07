@@ -6,25 +6,38 @@
 
 .section-list-clients {
       width: calc((100% - 30px * 2) / 2);
-      min-width: 210px;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  
-
-  &:nth-child(2n) {
-    margin-right: 0px;}
-   &:last-child{
+      max-width: 210px;
      margin-right: 0px;
-     margin-bottom:0px ;
+     margin-bottom: 30px;
+    &:nth-child(2n+1) {
+    margin-right: 30px;}
+   &:nth-child(n+5){
+    margin-bottom: 0px;
    } 
+   @include for-tablet{
+     width: calc((100% - 30px * 3) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(3n) {
+      margin-right: 0px;}
+    &:nth-child(n+4){
+      margin-bottom: 0px;
+    }
+       }
+       @include for-desktop {
+        &:nth-child(3n) {
+          margin-right: 30px;}
+         margin-bottom: 0px;
 
+       width: calc((100% - 30px * 5) / 6);
+       margin-right: 30px;
+        &:nth-child(6n) {
+       margin-right: 0px;}
+
+       }
  
 
-  // width: calc((100% - 30px * 5) / 6);
-  // margin-right: 30px;
-
-//  &:nth-child(6n) {
-  // margin-right: 0px;
+ 
 }
 
 .clients-link {

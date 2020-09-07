@@ -3,8 +3,11 @@
   }
 
   .footer-box {
+    @include for-desktop{
+      display: flex;
     align-items: baseline;
-    padding: 60px 0;
+    padding: 60px 0;}
+
   }
   
   .footer-contacts {
@@ -12,10 +15,18 @@
     font-style: normal;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 60px;
+    text-align: center;
+    @include for-desktop{
+      margin-bottom: 0px;
+    }
   }
   .adress {
     color: $primary-white-color;
   }
   .adress-box {
+    margin-bottom: 60px;
+    @include for-desktop{
     margin-right: 69px;
-  }
+    margin-bottom: 0px;
+  }}

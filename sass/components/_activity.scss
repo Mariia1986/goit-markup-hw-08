@@ -3,6 +3,9 @@
   @include for-desktop{
     display: block;
   }
+  @include for-desktop{
+    padding-top: 0px;
+  }
 }
 
 

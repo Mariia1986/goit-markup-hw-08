@@ -3,20 +3,44 @@
      
     width: 100%;
   }
-    
-    
-    .features-list-item:not(:last-child){
+  .features-list-item{
+    background-color: $primary-white-color;
+    @include for-phone{
+    &:not(:last-child){
       margin-bottom: 30px;
+    }}
+    @include for-tablet{
+      width: calc((100% - 30px * 2) / 2);
+        margin-right: 30px;
+        }
+        &:nth-child(2n){
+          margin-right: 0px;
+        }
+       &:nth-child(3n){
+        margin-bottom: 0px;
+      }
+      &:last-child{
+        margin-bottom: 0px;
+      }
+      @include for-desktop{
+   width: calc((100% - 30px * 3) / 4);
+    margin-right: 30px;
+    margin-bottom: 0px;
+    &:nth-child(2n){
+      margin-right: 30px;
     }
+     &:nth-child(4n) {
+    margin-right: 0px;
+  }
+  
+ 
+}
+      
+    }
+  
 
-  //   width: calc((100% - 30px * 3) / 4);
-  //   margin-right: 30px;
-  //   background-color: $primary-white-color;
-  
-  
-  // &:nth-child(4n) {
-  //   margin-right: 0px;
-  // }}
+
+ 
      
   
   .features-description {
@@ -24,17 +48,20 @@
     @include font( 14px, 1.71, 400);
     letter-spacing: 0.03em;
     text-align: center;
+    @include for-phone-cont{
+      text-align: start;
+    }
    
   }
   
    .features-icon-block {
       display: block;
-      padding: 25px 0px;
-  //   display: flex;
+      height: 120px;
+    display: flex;
       margin-bottom: 30px;
   //   width: 270px;
-  //   justify-content: center;
-  //   align-items: center;
+    justify-content: center;
+    align-items: center;
      background-color: $background-button-color;
   //   margin-bottom: 20px;
    }
