@@ -540,24 +540,36 @@ body {
 
 .menu-container.is-open {
   display: block;
+  z-index: 2;
 }
 
 .menu-navigation, .contacts-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
-.menu-container + .contacts-menu {
+.menu-navigation {
   margin-bottom: 60px;
+}
+
+.nav-list-item-menu:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.contacts-menu-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .menu-button {
@@ -596,17 +608,15 @@ body {
   fill: #2196f3;
 }
 
-@media screen and (max-width: 479px) {
-  .nav-list,
-  .menu-links {
-    display: none;
-  }
+.nav-list,
+.menu-links {
+  display: none;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .nav-list,
   .menu-links {
-    display: none;
+    display: block;
   }
 }
 
@@ -652,10 +662,26 @@ body {
 
 .nav-list-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 18px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list-link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .nav-list-item {
@@ -669,6 +695,8 @@ body {
 .current-link::after {
   content: "";
   position: relative;
+  -webkit-transform: translateY(8px);
+          transform: translateY(8px);
   display: block;
   width: 100%;
   height: 4px;
@@ -678,7 +706,7 @@ body {
   border-radius: 2px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .current-link {
     -webkit-transform: translateY(25px);
             transform: translateY(25px);

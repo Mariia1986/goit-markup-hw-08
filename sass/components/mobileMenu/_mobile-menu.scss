@@ -10,20 +10,30 @@
     top: 100%;
     background-color: $primary-white-color;
    
-     
    
 }
 .menu-container.is-open{
     display: block;
+    z-index: 2;
+    
   
 }
 .menu-navigation, .contacts-menu{
     display: flex;
+    @include font( 18px, 1.17, 500);
     flex-direction: column;
-    justify-content: center;
+        align-items: center;
     width: 100%;
+   
 }
 
-.menu-container + .contacts-menu{
+.menu-navigation {
     margin-bottom: 60px;
+}
+.nav-list-item-menu:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.contacts-menu-item:not(:last-child){
+    margin-bottom: 16px;
 }
