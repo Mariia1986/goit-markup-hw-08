@@ -671,14 +671,6 @@ body {
 @media screen and (min-width: 768px) {
   .nav-list-link {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .nav-list-link {
-    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
   }
@@ -707,7 +699,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .current-link {
+  .current-link::after {
     -webkit-transform: translateY(25px);
             transform: translateY(25px);
   }
@@ -748,6 +740,11 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.16;
+  }
   .contacts:first-child {
     margin-bottom: 10px;
   }
@@ -755,6 +752,9 @@ body {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;

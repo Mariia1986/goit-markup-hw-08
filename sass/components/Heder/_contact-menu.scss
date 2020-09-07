@@ -5,11 +5,12 @@
     letter-spacing: 0.02em;
     
            @include for-tablet{
-        
+            @include font(12px, 1.16, 500);
          &:first-child{
           margin-bottom: 10px;
        }
        @include for-desktop{
+        @include font(14px, 1.14, 500);
         align-items: center;
         margin-bottom: 0px;
         &:first-child{
