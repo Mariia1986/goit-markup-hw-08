@@ -18,11 +18,10 @@
 .modal {
   position: relative;
   padding: 40px;
-    width: 100% ;
+    width: 100%;
     background-color: $primary-white-color;
     @include for-tablet{
-           
-      width:450px;
+     width:450px;
     }
     @include for-desktop{
       position: absolute;
@@ -31,9 +30,8 @@
        transform: translate(-50%, -50%);
     width: 528px;
     }
-
-  
 }
+
 .close-modal {
   position: absolute;
    top: 8px;
