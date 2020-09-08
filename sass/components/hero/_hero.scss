@@ -3,13 +3,23 @@
         $ovelay-bgrimage-color 100%,
         $ovelay-bgrimage-color 100%
       ),
-      url(../images/bgimg.jpg);
+      url(../images/mobile/mobbgimg.png);
       background-repeat: no-repeat;
       background-size: cover;
       padding: 118px 0;
     
     text-align: center;
+    @include for-tablet{
+      background-image: inear-gradient(
+        $ovelay-bgrimage-color 100%,
+        $ovelay-bgrimage-color 100%
+      ),url(../images/tablet/tabbgimg.png);
+    }
     @include for-desktop{
+      background-image: inear-gradient(
+        $ovelay-bgrimage-color 100%,
+        $ovelay-bgrimage-color 100%
+      ),url(../images/desktop/bgimg.jpg);
        padding: 200px 0;
     }
     

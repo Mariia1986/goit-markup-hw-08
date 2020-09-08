@@ -481,6 +481,17 @@ body {
   border: 1px solid #ececec;
 }
 
+.header-line-menu::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  bottom: 0px;
+  left: 0px;
+  border: 1px solid #ececec;
+}
+
 .section-title {
   margin-bottom: 30px;
   margin-top: 0;
