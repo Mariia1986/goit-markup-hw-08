@@ -481,17 +481,6 @@ body {
   border: 1px solid #ececec;
 }
 
-.header-line-menu::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-  bottom: 0px;
-  left: 0px;
-  border: 1px solid #ececec;
-}
-
 .section-title {
   margin-bottom: 30px;
   margin-top: 0;
@@ -547,6 +536,7 @@ body {
   left: 0;
   top: 100%;
   background-color: #ffffff;
+  border-top: 2px solid #ececec;
 }
 
 .menu-container.is-open {
@@ -1010,6 +1000,10 @@ body {
   margin-bottom: 0;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+}
+
+.activity-picture {
+  position: relative;
 }
 
 .backdrop {

@@ -73,18 +73,8 @@ body{
   left: 0px;
   border: 1px solid #ececec;
 }
-.header-line-menu{
-  position: absolute;
 
-&::before{
-  content: "";
-  position:absolute;
-  width: 100%;
-  transform: translateY(2px);
-  bottom: 0px;
-  left: 0px;
-  border: 1px solid #ececec;
-}
+
 .section-title {
   margin-bottom: 30px;
   margin-top: 0;
