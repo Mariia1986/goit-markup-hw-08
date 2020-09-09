@@ -6,6 +6,9 @@
     font-family: $secondFont;
     @include font( 24px, 1.17, 700);
     letter-spacing: 0.03em;
+    @include for-desktop{
+      text-align: start;
+    }
   }
   .logo-end-footer {
     color: $primary-white-color;

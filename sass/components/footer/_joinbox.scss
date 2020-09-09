@@ -17,6 +17,9 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $primary-white-color;
+    @include for-desktop{
+      text-align: start;
+    }
   }
   .join-button {
     display: block;

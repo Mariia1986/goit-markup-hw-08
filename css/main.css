@@ -1002,10 +1002,6 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activity-picture {
-  position: relative;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -1352,6 +1348,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-list-clients {
@@ -1453,6 +1452,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-bottom: 0px;
+    text-align: start;
   }
 }
 
@@ -1481,6 +1481,12 @@ body {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-footer {
+    text-align: start;
+  }
 }
 
 .logo-end-footer {
@@ -1549,6 +1555,12 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 1200px) {
+  .join {
+    text-align: start;
+  }
 }
 
 .join-button {
